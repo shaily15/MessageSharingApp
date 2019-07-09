@@ -23,12 +23,25 @@ class MainActivity : AppCompatActivity() {
 
         btnForNextActivity.setOnClickListener {
             val message: String = etUserMsg.text.toString()
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SecondActivity::class.java)
+
+            intent.putExtra("userMsg", message)
+
             startActivity(intent)
 
 
+        }
+
+        btnShareToOtherApps.setOnClickListener {
+            val message: String = etUserMsg.text.toString()
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, message)
+
+            intent.type = "text/plain"
+
+            startActivity(Intent.createChooser(intent, "Share to : "))
         }
     }
 

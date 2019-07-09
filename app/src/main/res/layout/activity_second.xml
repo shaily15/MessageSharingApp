@@ -2,6 +2,18 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:id="@+id/txtUsrMsg"
+            android:layout_weight="1"/>
 </LinearLayout>

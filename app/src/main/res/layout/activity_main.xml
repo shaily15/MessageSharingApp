@@ -33,5 +33,12 @@
             android:layout_below="@+id/etUserMsg"
             android:layout_height="wrap_content"
             android:id="@+id/btnForNextActivity"/>
+    <Button
+            android:text="@string/share_to_other_apps"
+            android:layout_below="@+id/btnForNextActivity"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnShareToOtherApps"/>
 
 </RelativeLayout>
